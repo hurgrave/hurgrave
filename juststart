@@ -1,0 +1,13 @@
+<?php
+
+// ARRAY_MAP TO USE 
+        $array = [chr (rand (97,122)), chr (rand (ord('a'),ord('z'))), chr (rand (ord('a'),ord('z'))), chr (rand (ord('a'),ord('z'))),];
+        echo "Lowercase Output is ";
+        foreach ($array as $elem) {echo $elem." ";}
+        echo "<br>";
+        $modified = array_map('strtoupper',$array);
+        echo "function 'array_map' result is now a ";
+        foreach ($modified as $elem) {echo $elem." ";}
+        echo "<br>";
+
+?>
